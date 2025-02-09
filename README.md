@@ -1,6 +1,6 @@
 # Kokoro TTS Core ML Implementation
 
-This repository contains the tools to convert a Kokoro TTS model to Core ML format and instructions for implementing it in an iOS app.
+This repository contains the tools to convert a Kokoro TTS model to Core ML format and instructions for implementing it in an iOS app. I have no way to test or confirm if this works. 
 
 
 ## Converting the Model
@@ -146,23 +146,4 @@ The output is a feature representation that can be used for:
 3. Uses **ALL** compute units for best performance.
 4. Minimum deployment target is **iOS 15**.
 
-## Error Handling
-Common errors to handle:
-- Model loading failures.
-- Input text too long.
-- Invalid tokenization.
-- Memory constraints.
-- Processing errors.
 
-## Best Practices
-1. Initialize `KokoroTTSManager` once and reuse.
-2. Process text asynchronously.
-3. Handle memory warnings appropriately.
-4. Cache results when possible.
-5. Implement proper error handling.
-
-## Limitations
-- Fixed sequence length (100 tokens).
-- Single batch processing.
-- iOS 15+ requirement.
-- Memory usage considerations for long text.
