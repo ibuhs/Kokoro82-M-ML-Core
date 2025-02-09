@@ -2,17 +2,6 @@
 
 This repository contains the tools to convert a Kokoro TTS model to Core ML format and instructions for implementing it in an iOS app.
 
-## Project Structure 
-```
-KokoroTTS/
-├── Python/
-│   ├── convert_kokoro.py  # Conversion script
-│   └── run_conversion.py   # Runner script
-├── iOS/
-│   ├── text_encoder.mlpackage  # Converted text encoder model
-│   └── KokoroTTS.swift         # Swift implementation
-└── README.md
-```
 
 ## Converting the Model
 
